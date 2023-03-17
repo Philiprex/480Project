@@ -10,9 +10,13 @@ def getcc():
     labels = data["Dependent_count"]
     data = data.drop("Dependent_count", axis=1)
 
-    data = preprocessing.process(data)
+    train_len = round(len(data), 0)
+    x_train, y_train = data[:train_len], labels[:train_len]
+    x_test, y_test = data[train_len:], labels[train_len:]
 
-    return data, labels
+    x_trans = preprocessing.process(x_train)
+
+    return x_trans, y_train
 
 
 def getFruit():
@@ -22,9 +26,13 @@ def getFruit():
     labels = data["Class"]
     data = data.drop("Class", axis=1)
 
-    data = preprocessing.process(data)
+    train_len = round(len(data), 0)
+    x_train, y_train = data[:train_len], labels[:train_len]
+    x_test, y_test = data[train_len:], labels[train_len:]
 
-    return data, labels
+    x_trans = preprocessing.process(x_train)
+
+    return x_trans, y_train
 
 
 def getDrugs():
@@ -34,6 +42,10 @@ def getDrugs():
     labels = data["Drug"]
     data = data.drop("Drug", axis=1)
 
-    data = preprocessing.process(data)
+    train_len = round(len(data), 0)
+    x_train, y_train = data[:train_len], labels[:train_len]
+    x_test, y_test = data[train_len:], labels[train_len:]
 
-    return data, labels
+    x_trans = preprocessing.process(x_train)
+
+    return x_trans, y_train
