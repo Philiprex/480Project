@@ -26,3 +26,24 @@ output: html_document
 | Credit Card | 0.35456161 | 0.37470379 | 0.32503704 |
 | Date Fruit | 0.3 | 0.65551839 | 0.63210702 |
 | Drug | 0.85074627 | 0.82089552 | 0.83333333|
+
+Credit Card Performance Across Methods | Fold 1 | Fold 2 | Fold 3 |
+|--|--|--|--|
+SGD Classifier Accuracy | 0.25592417 | 0.27043839 | 0.25244444 |
+KMeans Accuracy | 0.17861374 | 0.13122038 | 0.1602963 |
+Random Forest Accuracy  | 0.40077014 | 0.42950237 | 0.41333333 |
+AdaBoost Accuracy | 0.35456161 | 0.37470379 | 0.32503704 |
+
+Date Fruit Performance Across Methods | Fold 1 | Fold 2 | Fold 3 |
+|--|--|--|--|
+SGD Classifier Accuracy | 0.86333333 | 0.89297659 | 0.8729097 |
+KMeans Accuracy  |0 | 0 | 0 |
+Random Forest Accuracy  | 0.87 | 0.87959866 | 0.85953177 |
+AdaBoost Accuracy | 0.3 | 0.65551839 | 0.63210702 |
+
+Drug Performance Across Methods | Fold 1 | Fold 2 | Fold 3 |
+|--|--|--|--|
+SGD Classifier Accuracy  | 0.91044776 | 0.92537313 | 0.95454545 |
+KMeans Accuracy |0 | 0 | 0 |
+Random Forest Accuracy  |1 | 1 | 0.96969697|
+AdaBoost Accuracy  | 0.35456161 | 0.37470379 | 0.32503704 |
